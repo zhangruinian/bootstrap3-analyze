@@ -6,6 +6,8 @@
 
 // Core variables and mixins
 @import "variables.less";
+
+//定义混合 这类似定义函数或者宏，在mixins文件夹中可看到所定义的函数
 @import "mixins.less";
 
 // Reset and dependencies
@@ -14,9 +16,13 @@
 @import "glyphicons.less";
 
 // Core CSS
+//脚手架，相当于全局样式，编译后对应源码为886~989行
 @import "scaffolding.less";
+//排版样式，编译后对应源码为990~1335行
 @import "type.less";
+//代码样式，编译后对应源码为1336~1389行
 @import "code.less";
+//栅格系统，这是Bootstrap支持响应式的重点，编译后对应源码为1390~2056行
 @import "grid.less";
 @import "tables.less";
 @import "forms.less";
@@ -52,5 +58,7 @@
 @import "carousel.less";
 
 // Utility classes
+//实用工具类，编译后对应源码为6064~6147
 @import "utilities.less";
+//响应式工具类，编译后对应源码为6148~6357行
 @import "responsive-utilities.less";
